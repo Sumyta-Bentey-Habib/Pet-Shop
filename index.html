@@ -9,9 +9,56 @@
     <!-- DaisyUI and Tailwind link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script> 
-    <!-- Font Add -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    
+<body class="adlam-display-regular-font">
+<main>
+    <nav class="bg-yellow-500 bg-opacity-10">
+        <div class="border-b navbar bg-base-100 lg:border-none">
+          <div class="navbar-start lg:hidden">
+            <button class="btn btn-ghost">
+              <img src="./c1-assets/logo-header.png" alt="Logo" class="w-10 h-10">
+            </button>
+          </div>
+          <div class="navbar-end lg:hidden">
+            <div class="dropdown dropdown-end">
+              <button tabindex="0" class="btn btn-ghost">
+                <i class="text-xl fa-solid fa-bars"></i>
+              </button>
+              <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+                <li><a>Log in</a></li>
+                <li><a>Register</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="items-center hidden lg:flex navbar-start">
+            <img src="./c1-assets/logo-header.png" alt="Logo" class="w-10 h-10">
+            <a class="text-xl font-semibold">
+              Browse<span class="text-yellow-500">4</span>Pet
+            </a>
+          </div>
+          <div class="hidden navbar-center lg:flex">
+            <ul class="px-1 menu menu-horizontal">
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="items-center hidden gap-4 navbar-end lg:flex">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a class="text-black border-yellow-500 btn">Log in</a>
+            <a class="text-black bg-yellow-500 btn">Register</a>
+          </div>
+        </div>
+      </nav>
+      
+      
+      
+</main>    
 </body>
 </html>
