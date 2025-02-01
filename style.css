@@ -5,4 +5,20 @@
     font-weight: 400;
     font-style: normal;
   }
- 
+  
+@keyframes marqueeLoop {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.looping-text {
+    white-space: nowrap;
+    display: inline-block;
+    animation: marqueeLoop 20s linear infinite;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffc400;
+}
+
+
+
