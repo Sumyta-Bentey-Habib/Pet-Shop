@@ -11,7 +11,7 @@
     100% { transform: translateX(-100%); }
 }
 
-.looping-text {
+ .looping-text {
     white-space: nowrap;
     display: inline-block;
     animation: marqueeLoop 20s linear infinite;
@@ -21,4 +21,56 @@
 }
 
 
+@keyframes wordChange {
+    0% { content: "Shop for Pet Essentials"; }
+    20% { content: "Explore Pet Products"; }
+    40% { content: "Discover Your Pet’s Needs"; }
+    60% { content: "Pamper Your Furry Friend"; }
+    80% { content: "Find the Best Pet Care"; }
+    100% { content: "Shop for Pet Essentials"; } 
+  }
+  
+  .word-loop::after {
+    content: "Shop for Pet Essentials"; 
+    animation: wordChange 10s infinite;
+  }
+  
+  .word-loop {
+    color: transparent;
+    position: relative;
+  }
+  
+  .word-loop::after {
+    position: absolute;
+    color: black; 
+    left: 0;
+    top: 0;
+  }
 
+/* Define typing animation */
+@keyframes wordChange {
+    0% { content: "Shop for Pet Essentials"; }
+    20% { content: "Explore Pet Products"; }
+    40% { content: "Discover Your Pet’s Needs"; }
+    60% { content: "Pamper Your Furry Friend"; }
+    80% { content: "Find the Best Pet Care"; }
+    100% { content: "Shop for Pet Essentials"; } /* Loop back */
+  }
+  
+  .word-loop::after {
+    content: "Shop for Pet Essentials"; /* Default text */
+    animation: wordChange 10s infinite;
+  }
+  
+  .word-loop {
+    color: transparent;
+    position: relative;
+  }
+  
+  .word-loop::after {
+    position: absolute;
+    color: black; /* Match your text color */
+    left: 0;
+    top: 0;
+  }
+  
